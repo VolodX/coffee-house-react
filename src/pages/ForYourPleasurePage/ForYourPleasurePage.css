@@ -1,0 +1,66 @@
+.for-your-pleasure-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.for-pleasure-hero {
+  background-image: url('/images/pleasure-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 260px;
+}
+
+.about-goods-section {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-goods-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-goods-image {
+  flex: 0 0 40%;
+}
+
+.about-goods-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-goods-text {
+  flex: 1;
+}
+
+.about-goods-text p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.section-divider {
+  width: 240px;
+  margin: 0 auto;
+  border: none;
+  border-top: 1px solid #d2b48c;
+}
+
+.goods-list-section {
+  padding: 30px 20px 60px;
+}
+
+@media (max-width: 768px) {
+  .about-goods-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .about-goods-image {
+    flex: 0 0 100%;
+    max-width: 300px;
+    margin: 0 auto 30px;
+  }
+}
