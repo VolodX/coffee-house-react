@@ -51,17 +51,17 @@ function HomePage() {
         <div className="best-items">
           {/* Для прикладу, можна додати статичні карточки продуктів */}
           <div className="coffee-card">
-            <img src="/images/coffee-items/item1.jpg" alt="Solimo Coffee" className="coffee-image" />
+            <img src="src/assets/images/coffee-items/item1.jpg" alt="Solimo Coffee" className="coffee-image" />
             <h3 className="coffee-title">Solimo Coffee Beans 2 kg</h3>
             <p className="coffee-price">10.73$</p>
           </div>
           <div className="coffee-card">
-            <img src="/images/coffee-items/item2.jpg" alt="Presto Coffee" className="coffee-image" />
+            <img src="src/assets/images/coffee-items/item2.jpg" alt="Presto Coffee" className="coffee-image" />
             <h3 className="coffee-title">Presto Coffee Beans 1 kg</h3>
             <p className="coffee-price">15.99$</p>
           </div>
           <div className="coffee-card">
-            <img src="/images/coffee-items/item3.jpg" alt="AROMISTICO Coffee" className="coffee-image" />
+            <img src="src/assets/images/coffee-items/item3.jpg" alt="AROMISTICO Coffee" className="coffee-image" />
             <h3 className="coffee-title">AROMISTICO Coffee 1 kg</h3>
             <p className="coffee-price">6.99$</p>
           </div>
