@@ -7,7 +7,7 @@ function Footer() {
       <nav className="footer__nav">
         <ul className="footer__nav-list">
           <li className="footer__nav-item">
-            <Link to="/" className="footer__nav-link">Coffee house</Link>
+            <Link to="/" className="footer__nav-link nav-link--logo nav-link--logo-black">Coffee house</Link>
           </li>
           <li className="footer__nav-item">
             <Link to="/our-coffee" className="footer__nav-link">Our coffee</Link>
