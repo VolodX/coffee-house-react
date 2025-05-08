@@ -4,24 +4,44 @@ import './Header.css';
 function Header() {
   return (
     <header className="header">
-      <div className="header__logo">
-        <Link to="/" className='header__logo-link'>
-					<img src="/images/coffee-logo.svg" alt="Coffee logo" className="header__logo-img" />
-				</Link>
+      <div className="header__top">
+        <nav className="header__nav">
+          <ul className="header__nav-list">
+            <li className="header__nav-item">
+              <Link to="/" className="header__nav-link nav-link--logo nav-link--logo-white">
+                Coffee house
+              </Link>
+            </li>
+            <li className="header__nav-item">
+              <Link to="/our-coffee" className="header__nav-link">Our coffee</Link>
+            </li>
+            <li className="header__nav-item">
+              <Link to="/for-your-pleasure" className="header__nav-link">For your pleasure</Link>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav className="header__nav nav">
-        <ul className="nav__list">
-          <li className="nav__item">
-            <Link to="/" className="nav__link">Coffee house</Link>
-          </li>
-          <li className="nav__item">
-            <Link to="/our-coffee" className="nav__link">Our coffee</Link>
-          </li>
-          <li className="nav__item">
-            <Link to="/for-your-pleasure" className="nav__link">For your pleasure</Link>
-          </li>
-        </ul>
-      </nav>
+      <div className="header__hero">
+        <div className="header__hero-content">
+          <h1 className="header__hero-title">Everything You Love About Coffee</h1>
+          <div className="header__hero-divider">
+            <Link to="/">
+              <img
+                src="/images/coffee-beans-white.svg"
+                alt="Coffee beans"
+                className="header__hero-divider-icon"
+              />
+            </Link>
+          </div>
+          <p className="header__hero-subtitle">
+            We make every day full of energy and taste
+          </p>
+          <p className="header__hero-description">Want to try our beans?</p>
+          <Link to="/our-coffee" className="header__hero-button">
+            More
+          </Link>
+        </div>
+      </div>
     </header>
   );
 }
