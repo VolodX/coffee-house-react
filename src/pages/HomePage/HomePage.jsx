@@ -4,28 +4,6 @@ import './HomePage.css';
 function HomePage() {
   return (
     <div className="home-page">
-      <section className="hero-section">
-        <div className="hero-content">
-          <h1 className="hero-title">Everything You Love About Coffee</h1>
-          <div className="divider">
-            <Link to="/">
-              <img
-                src="/images/coffee-beans-white.svg"
-                alt="Coffee beans"
-                className="divider-icon"
-              />
-            </Link>
-          </div>
-          <p className="hero-subtitle">
-            We make every day full of energy and taste
-          </p>
-          <p className="hero-description">Want to try our beans?</p>
-          <Link to="/our-coffee" className="hero-button">
-            More
-          </Link>
-        </div>
-      </section>
-
       <section className="about-section">
         <h2 className="section-title">About Us</h2>
         <div className="divider">
