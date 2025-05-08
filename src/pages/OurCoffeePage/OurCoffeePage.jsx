@@ -1,35 +1,6 @@
-import { useState, useEffect } from 'react';
-
 import './OurCoffeePage.css';
 
-import { coffeeData } from '../../data/coffeeData';
-
 function OurCoffeePage() {
-  const [filteredCoffee, setFilteredCoffee] = useState([]);
-  const [filters, setFilters] = useState({
-    search: '',
-    country: 'all',
-  });
-
-  useEffect(() => {
-    // Фільтрація кави на основі пошуку та країни
-    let result = [...coffeeData];
-    
-    if (filters.search) {
-      result = result.filter(coffee => 
-        coffee.name.toLowerCase().includes(filters.search.toLowerCase())
-      );
-    }
-    
-    if (filters.country !== 'all') {
-      result = result.filter(coffee => 
-        coffee.country === filters.country
-      );
-    }
-    
-    setFilteredCoffee(result);
-  }, [filters]);
-
   return (
     <div className="our-coffee-page">
       <section className="hero-section our-coffee-hero">
@@ -39,30 +10,34 @@ function OurCoffeePage() {
       <section className="about-beans-section">
         <div className="about-beans-content">
           <div className="about-beans-image">
-            <img src="/images/coffee-woman.jpg" alt="Woman with coffee" />
+            <img src="/src/assets/images/our_beans.jpg" alt="Woman with coffee" />
           </div>
           <div className="about-beans-text">
             <h2 className="section-title">About our beans</h2>
             <div className="divider">
-              <img src="/images/coffee-beans-dark.svg" alt="Coffee beans" className="divider-icon" />
+              <img
+                src="/images/coffee-beans-black.svg"
+                alt="Coffee beans"
+                className="divider-icon"
+              />
             </div>
             <p>
-              Our coffee beans are sourced from various regions around the world, 
-              each with its own unique flavor profile and characteristics. We work 
-              directly with farmers to ensure fair trade practices and sustainable 
-              farming methods.
+              Our coffee beans are sourced from various regions around the
+              world, each with its own unique flavor profile and
+              characteristics. We work directly with farmers to ensure fair
+              trade practices and sustainable farming methods.
             </p>
             <p>
-              Each batch of beans is carefully roasted to perfection, bringing out 
-              the best flavors and aromas. Whether you prefer a light, medium, or 
-              dark roast, we have something to satisfy every coffee enthusiast.
+              Each batch of beans is carefully roasted to perfection, bringing
+              out the best flavors and aromas. Whether you prefer a light,
+              medium, or dark roast, we have something to satisfy every coffee
+              enthusiast.
             </p>
           </div>
         </div>
       </section>
 
       <hr className="section-divider" />
-
     </div>
   );
 }
