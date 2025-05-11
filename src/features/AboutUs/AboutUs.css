@@ -1,0 +1,16 @@
+.about-us {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about-us__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about-us__content {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.6;
+}

@@ -1,0 +1,19 @@
+.header--home {
+  background-image: url('@/assets/images/header-bg/house.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.header--coffee {
+  background-image: url('@/assets/images/header-bg/our.jpg');
+  background-size: cover;
+  background-position: center;
+	max-height: 260px;
+}
+
+.header--pleasure {
+  background-image: url('@/assets/images/header-bg/pleasure.jpg');
+  background-size: cover;
+  background-position: center;
+	max-height: 260px;
+}

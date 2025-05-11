@@ -1,0 +1,36 @@
+.coffee-list {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.coffee-list__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.coffee-list__items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.coffee-card {
+  width: 200px;
+  text-align: center;
+}
+
+.coffee-card__image {
+  width: 100%;
+  height: auto;
+}
+
+.coffee-card__title {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.coffee-card__price {
+  font-size: 16px;
+  color: #333;
+}
