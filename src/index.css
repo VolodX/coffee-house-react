@@ -17,7 +17,7 @@
 }
 
 :root {
-  font-family: 'Merienda', 'Roboto', sans-serif; /* Основний шрифт + резервний Roboto для кирилиці */
+  font-family: 'Merienda', 'Roboto', sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color: #333;
