@@ -3,10 +3,6 @@ import './OurCoffeePage.css';
 function OurCoffeePage() {
   return (
     <div className="our-coffee-page">
-      <section className="hero-section our-coffee-hero">
-        <h1 className="page-title">Our Coffee</h1>
-      </section>
-
       <section className="about-beans-section">
         <div className="about-beans-content">
           <div className="about-beans-image">

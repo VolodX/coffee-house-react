@@ -1,18 +1,13 @@
 import { useState } from 'react';
+import { goodsData } from '@/data/goods';
 
 import './ForYourPleasurePage.css';
-
-import { goodsData } from '../../data/coffeeData';
 
 function ForYourPleasurePage() {
   const [goods] = useState(goodsData);
 
   return (
     <div className="for-your-pleasure-page">
-      <section className="hero-section for-pleasure-hero">
-        <h1 className="page-title">For Your Pleasure</h1>
-      </section>
-
       <section className="about-goods-section">
         <div className="about-goods-content">
           <div className="about-goods-image">

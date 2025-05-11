@@ -4,7 +4,7 @@
 }
 
 .for-pleasure-hero {
-  background-image: url('/images/pleasure-bg.jpg');
+  /* Фонове зображення pleasure-bg.jpg відсутнє */
   background-size: cover;
   background-position: center;
   height: 260px;
@@ -48,16 +48,12 @@
   border-top: 1px solid #d2b48c;
 }
 
-.goods-list-section {
-  padding: 30px 20px 60px;
-}
-
 @media (max-width: 768px) {
   .about-goods-content {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .about-goods-image {
     flex: 0 0 100%;
     max-width: 300px;
