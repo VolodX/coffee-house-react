@@ -1,33 +1,24 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useState } from 'react';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import './styles/global.css';
 import './App.css';
 
-// Importing pages
-import HomePage from './pages/HomePage/HomePage';
-import OurCoffeePage from './pages/OurCoffeePage/OurCoffeePage';
-import ForYourPleasurePage from './pages/ForYourPleasurePage/ForYourPleasurePage';
-
-// Importing components
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+import AppLayout from './components/layout/AppLayout';
+import {routes} from './config/routes';
 
 function App() {
-  // Для прикладу, можна зберігати стан додатку, який буде спільним для різних сторінок
-  // const [coffeeItems, setCoffeeItems] = useState([]);
-
   return (
     <Router>
-      <div className="app">
-        <Header />
-        <main className="main-content">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/our-coffee" element={<OurCoffeePage />} />
-            <Route path="/for-your-pleasure" element={<ForYourPleasurePage />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
+      <Routes>
+        <Route path="/" element={<AppLayout />} >
+          {routes.map(({path, Component}) => (
+            <Route
+              key={path}
+              path={path === '/' ? '' : path.slice(1)}
+              element={<Component />}
+            />
+          ))}
+        </Route>
+      </Routes>
     </Router>
   );
 }
