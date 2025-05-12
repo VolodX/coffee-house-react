@@ -1,5 +1,5 @@
 .hero {
-  padding: 63px 50px 200px;
+  /* padding: 63px 50px 200px; */
   color: white;
   flex-grow: 1;
   display: flex;
@@ -31,7 +31,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 65px 20px 150px;
+    padding: 65px 20px 0px;
   }
 
   .hero__title {
