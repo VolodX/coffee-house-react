@@ -6,7 +6,10 @@ function OurCoffeePage() {
       <section className="about-beans-section">
         <div className="about-beans-content">
           <div className="about-beans-image">
-            <img src="/src/assets/images/our_beans.jpg" alt="Woman with coffee" />
+            <img
+              src="/src/assets/images/our_beans.jpg"
+              alt="Woman with coffee"
+            />
           </div>
           <div className="about-beans-text">
             <h2 className="section-title">About our beans</h2>
@@ -18,16 +21,15 @@ function OurCoffeePage() {
               />
             </div>
             <p>
-              Our coffee beans are sourced from various regions around the
-              world, each with its own unique flavor profile and
-              characteristics. We work directly with farmers to ensure fair
-              trade practices and sustainable farming methods.
+              Extremity sweetness difficult behaviour he of. On disposal of as
+              landlord horrible.
             </p>
             <p>
-              Each batch of beans is carefully roasted to perfection, bringing
-              out the best flavors and aromas. Whether you prefer a light,
-              medium, or dark roast, we have something to satisfy every coffee
-              enthusiast.
+              Afraid at highly months do things on at. Situation recommend
+              objection do intention so questions. <br /> As greatly removed calling
+              pleased improve an. Last ask him cold feel met spot shy want.
+              Children me laughing we prospect answered followed. At it went is
+              song that held help face.
             </p>
           </div>
         </div>
