@@ -1,7 +1,7 @@
-import Button from '@/components/common/Button/Button';
-import Divider from '@/components/common/Divider/Divider';
+import Button from '@/components/UI/Button/Button';
+import Divider from '@/components/UI/Divider/Divider';
 
-import '../hero.css'
+import '../hero.css';
 import './HomeHero.css';
 
 function HomeHero() {

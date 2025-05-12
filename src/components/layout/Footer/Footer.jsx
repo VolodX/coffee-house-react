@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom';
-import Divider from '@/components/common/Divider/Divider';
+import {Link} from 'react-router-dom';
+import Divider from '@/components/UI/Divider/Divider';
 
-import '@/components/common/NavLink/NavLink.css'
+import '@/components/UI/NavLink/NavLink.css';
 import './Footer.css';
 
 function Footer() {
@@ -15,10 +15,14 @@ function Footer() {
             </Link>
           </li>
           <li className="footer__item">
-            <Link to="/our-coffee" className="footer__link">Our coffee</Link>
+            <Link to="/our-coffee" className="footer__link">
+              Our coffee
+            </Link>
           </li>
           <li className="footer__item">
-            <Link to="/for-your-pleasure" className="footer__link">For your pleasure</Link>
+            <Link to="/for-your-pleasure" className="footer__link">
+              For your pleasure
+            </Link>
           </li>
         </ul>
       </nav>

@@ -1,7 +1,7 @@
 // import NavLink from '../../common/NavLink/NavLink';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
-import '../common/NavLink/NavLink.css'
+import '../UI/NavLink/NavLink.css';
 import './Navigation.css';
 
 function Navigation() {
@@ -9,10 +9,7 @@ function Navigation() {
     <nav className="header__nav nav">
       <ul className="nav__list">
         <li className="nav__item">
-          <Link
-            to="/"
-            className="nav__link link--logo link--logo-white"
-          >
+          <Link to="/" className="nav__link link--logo link--logo-white">
             Coffee house
           </Link>
         </li>
