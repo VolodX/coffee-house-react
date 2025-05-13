@@ -1,0 +1,16 @@
+.coffee-card {
+	padding: 35px 25px 22px;
+}
+.coffee-card__img {
+	margin-bottom: 15px;
+}
+.coffee-card__title {
+	margin-bottom: 14px;
+	text-align: right;
+}
+.coffee-card__subtitle {
+	margin-bottom: 14px;
+	text-align: right;
+}
+.coffee-card__price {
+}
