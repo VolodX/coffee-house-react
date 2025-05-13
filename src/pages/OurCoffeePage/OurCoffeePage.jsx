@@ -1,4 +1,5 @@
 import './OurCoffeePage.css';
+import SearchFilter from '@/components/SearchFilter/SearchFilter';
 
 function OurCoffeePage() {
   return (
@@ -36,6 +37,9 @@ function OurCoffeePage() {
       </section>
 
       <hr className="section-divider" />
+
+			<SearchFilter />
+
     </div>
   );
 }
