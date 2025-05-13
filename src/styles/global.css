@@ -1,3 +1,7 @@
+:root {
+	--box-shadow-light: 4px 4px 20px 0 rgba(0, 0, 0, 0.25);
+}
+
 .section-divider {
   width: 240px;
   margin: 0 auto 60px;
