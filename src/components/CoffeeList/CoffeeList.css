@@ -1,0 +1,19 @@
+.coffee-list__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 55px;
+}
+
+@media (max-width: 850px) {
+  .coffee-list__items {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .coffee-list__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 65px;
+  }
+}
