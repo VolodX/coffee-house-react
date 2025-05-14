@@ -44,32 +44,32 @@ function HomePage() {
         </div>
         <div className="best-items">
           {/* Для прикладу, можна додати статичні карточки продуктів */}
-          <div className="coffee-card">
+          <div className="best-items__card">
             <img
               src="src/assets/images/coffee-items/item1.jpg"
               alt="Solimo Coffee"
-              className="coffee-image"
+              className="best-items__image"
             />
-            <h3 className="coffee-title">Solimo Coffee Beans 2 kg</h3>
-            <p className="coffee-price">10.73$</p>
+            <h3 className="best-items__title">Solimo Coffee Beans 2 kg</h3>
+            <p className="best-items__price">10.73$</p>
           </div>
-          <div className="coffee-card">
+          <div className="best-items__card">
             <img
               src="src/assets/images/coffee-items/item2.jpg"
               alt="Presto Coffee"
-              className="coffee-image"
+              className="best-items__image"
             />
-            <h3 className="coffee-title">Presto Coffee Beans 1 kg</h3>
-            <p className="coffee-price">15.99$</p>
+            <h3 className="best-items__title">Presto Coffee Beans 1 kg</h3>
+            <p className="best-items__price">15.99$</p>
           </div>
-          <div className="coffee-card">
+          <div className="best-items__card">
             <img
               src="src/assets/images/coffee-items/item3.jpg"
               alt="AROMISTICO Coffee"
-              className="coffee-image"
+              className="best-items__image"
             />
-            <h3 className="coffee-title">AROMISTICO Coffee 1 kg</h3>
-            <p className="coffee-price">6.99$</p>
+            <h3 className="best-items__title">AROMISTICO Coffee 1 kg</h3>
+            <p className="best-items__price">6.99$</p>
           </div>
         </div>
       </section>
