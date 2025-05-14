@@ -3,7 +3,7 @@ import CoffeeCard from '../CoffeeCard/CoffeeCard';
 import { memo } from 'react';
 
 const CoffeeList = ({data}) => {
-  if (data.length === 0) {
+  if (!Array.isArray(data) ||data.length === 0) {
     return <p className="coffee-list__empty tac">No coffee items available.</p>;
   }
 
