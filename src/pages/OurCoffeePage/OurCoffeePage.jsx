@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import {useMemo} from 'react';
 
 import './OurCoffeePage.css';
 import SearchFilter from '@/components/SearchFilter/SearchFilter';
@@ -12,15 +13,15 @@ function OurCoffeePage() {
     setQuery(query);
   };
 
-	const searchCoffee = (items, query) => {
-		if (query.length === 0) return items;
+  const searchCoffee = (items, query) => {
+    if (query.length === 0) return items;
 
-		return items.filter(item => {
-			return item.name.toLowerCase().includes(query.toLowerCase());
-		})
-	}
+    return items.filter(item => {
+      return item.name.toLowerCase().includes(query.toLowerCase());
+    });
+  };
 
-  const visibleData = searchCoffee(coffeeData, query);
+  const visibleData = useMemo(() => searchCoffee(coffeeData, query), [query]);
   return (
     <div className="our-coffee-page">
       <section className="about-beans-section">

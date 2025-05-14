@@ -14,4 +14,4 @@ const CoffeeList = ({data}) => {
   return <div className="coffee-list__items">{elements}</div>;
 };
 
-export default CoffeeList;
+export default memo(CoffeeList);
