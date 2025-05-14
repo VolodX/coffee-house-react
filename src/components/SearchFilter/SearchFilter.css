@@ -3,7 +3,7 @@
 	align-items: center;
   max-width: 800px;
   margin: 0 auto 60px;
-	gap: 80px;
+	gap: 60px;
 }
 .search-filter__query {
   display: flex;
@@ -33,9 +33,10 @@
 .search-filter__region {
 	display: flex;
 	align-items: center;
-	gap: 35px;
+	gap: 25px;
 }
 .search-filter__region-title {
+	font-size: 14px;
 }
 .search-filter__region-btns {
 }
@@ -47,11 +48,17 @@
 	border: 0;
 	transition: all 0.2s ease;
 }
-.search-filter__region-btn:hover,
-.search-filter__region-btn:focus  {
-	background: #fff8f0;
+.search-filter__region-btn:hover {
+	background: #0e0900;
+	color: rgb(238, 197, 95);
 }
 
 .search-filter__region-btn:not(:last-child) {
 	margin-right: 5px;
+}
+
+.search-filter__region-btn--active {
+	background: #0e0900;
+	color: rgb(238, 197, 95);
+	/* background: #ffefdb */
 }
