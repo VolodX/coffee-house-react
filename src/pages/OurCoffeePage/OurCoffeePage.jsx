@@ -8,20 +8,32 @@ import coffeeData from '@/data/coffee';
 
 function OurCoffeePage() {
   const [query, setQuery] = useState('');
+  const [filterOrigin, setFilterOrigin] = useState('All');
 
-  const updateSearch = query => {
-    setQuery(query);
-  };
+  // Search-query
+  const updateSearch = query => setQuery(query);
 
   const searchCoffee = (items, query) => {
     if (query.length === 0) return items;
 
     return items.filter(item => {
-      return item.name.toLowerCase().includes(query.toLowerCase());
+      return item.name.toLowerCase().includes(query.toLowerCase()); 
     });
   };
 
-  const visibleData = useMemo(() => searchCoffee(coffeeData, query), [query]);
+  // Filter cards
+  const selectFilter = filter => setFilterOrigin(filter);
+
+  const filterCards = (items, filter) => {
+		if (!filter || filter === 'All') return items;
+		return items.filter(item => item.origin === filter);
+  };
+
+  const visibleData = useMemo(
+    () => filterCards(searchCoffee(coffeeData, query), filterOrigin),
+    [query, filterOrigin]
+  );
+
   return (
     <div className="our-coffee-page">
       <section className="about-beans-section">
@@ -58,7 +70,7 @@ function OurCoffeePage() {
 
       <hr className="section-divider" />
 
-      <SearchFilter onUpdateSearch={updateSearch} />
+      <SearchFilter filterOrigin={filterOrigin} onUpdateSearch={updateSearch} onSelectFilter={selectFilter} />
 
       <div className="coffee-list">
         <CoffeeList data={visibleData} />
