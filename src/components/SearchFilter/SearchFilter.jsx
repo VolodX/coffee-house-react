@@ -1,6 +1,6 @@
 import './SearchFilter.css';
 
-function SearchFilter() {
+function SearchFilter({onUpdateSearch}) {
   return (
     <div className="search-filter">
       <div className="search-filter__query">
@@ -9,11 +9,14 @@ function SearchFilter() {
         </label>
         <input
           className="search-filter__input"
+					onChange={(e) => onUpdateSearch(e.target.value)}
           id="search-input"
           type="text"
           placeholder="start typing here..."
         />
       </div>
+
+			{/* Filter by region */}
       <div className="search-filter__region">
         <p className="search-filter__region-title">
           Or filter
