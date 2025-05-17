@@ -2,8 +2,8 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './styles/global.css';
 import './App.css';
 
-import AppLayout from './components/Layout/AppLayout';
-import {routes} from './config/routes';
+import AppLayout from '@/components/Layout/AppLayout';
+import {routes} from '@/config/routes';
 
 function App() {
   return (
