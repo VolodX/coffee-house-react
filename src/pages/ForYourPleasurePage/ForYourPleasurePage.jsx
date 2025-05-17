@@ -1,22 +1,23 @@
 import { useState } from 'react';
-import { goodsData } from '@/data/goods';
+import coffeeData from '@/data/coffee';
+import CoffeeList from '@/components/CoffeeList/CoffeeList';
 
 import './ForYourPleasurePage.css';
 
 function ForYourPleasurePage() {
-  const [goods] = useState(goodsData);
+  const [coffee] = useState(coffeeData);
 
   return (
     <div className="for-your-pleasure-page">
       <section className="about-goods-section">
         <div className="about-goods-content">
           <div className="about-goods-image">
-            <img src="/images/coffee-cup.jpg" alt="Cup of coffee" />
+            <img src="/src/assets/images/about_goods.jpg" alt="Cup of coffee" />
           </div>
           <div className="about-goods-text">
             <h2 className="section-title">About our goods</h2>
             <div className="divider">
-              <img src="/images/coffee-beans-dark.svg" alt="Coffee beans" className="divider-icon" />
+              <img src="/images/coffee-beans-black.svg" alt="Coffee beans" className="divider-icon" />
             </div>
             <p>
               Besides our premium coffee beans, we offer a selection of coffee-related 
@@ -34,6 +35,8 @@ function ForYourPleasurePage() {
       </section>
 
       <hr className="section-divider" />
+
+			<CoffeeList data={coffee} />
 
     </div>
   );
