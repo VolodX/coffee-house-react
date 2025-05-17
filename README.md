@@ -1,70 +1,42 @@
 # Coffee Shop Web App
 
-This is a work-in-progress web application for a coffee shop, built with **React** and **Vite**. The app features a multi-page structure with three main pages: *Home*, *Our Coffee*, and *For Your Pleasure*. It includes search and filter functionality to browse coffee products and aims to provide a modern, user-friendly experience.
+**Coffee Shop Web App** is a modern single-page application for a coffee shop, built with **React** and **Vite**. The app currently works and will continue to evolve with new features, improved UI, and API integration.
 
-## 🚧 Project Status
-This project is under active development. Current features include:
-- Multi-page navigation using React Router.
-- Initial setup for the *Home*, *Our Coffee*, and *For Your Pleasure* pages.
-- Basic search and filter components for the coffee catalog.
+## Features
 
-Future plans include:
-- Enhancing the UI with Tailwind CSS or custom styles.
-- Adding a shopping cart and checkout functionality.
-- Implementing dynamic data fetching from an API or JSON.
+- Multi-page navigation with React Router:
+  - `/` — Home Page  
+  - `/our-coffee` — Our Coffee Page  
+  - `/for-your-pleasure` — For Your Pleasure Page  
+- Live search and filter functionality  
+- Reusable component structure  
+- Data stored in `src/data/` (JSON) or fetched from an API in the future  
+- Custom CSS styling (no PostCSS)
 
 ## 🛠️ Tech Stack
-- **Vite**: Fast build tool and development server.
-- **React**: Frontend library for building UI components.
-- **React Router**: For multi-page navigation.
-- **CSS**: For styling (to be extended with Tailwind CSS or similar).
-- **GitHub**: For version control and collaboration.
 
-## 📂 Project Structure
-```
-coffee-shop/
-├── public/                  # Static assets
-├── src/
-│   ├── assets/              # Images, styles, etc.
-│   ├── components/          # Reusable components (e.g., Header, Footer, SearchBar)
-│   ├── pages/               # Page components (Home, OurCoffee, ForYourPleasure)
-│   ├── App.jsx              # Main app with routes
-│   ├── index.jsx            # Entry point
-│   └── index.css            # Global styles
-├── README.md                # Project documentation
-└── package.json             # Dependencies and scripts
+- **Vite** — fast development server and build tool  
+- **React** — UI library  
+- **React Router** — client-side routing  
+- **CSS** — styling  
+- **Local Storage** and **API** for data persistence  
+
+## 🚀 Installation & Running Locally
+
+```bash
+git clone https://github.com/VolodX/coffee-shop-web-app.git
+cd coffee-shop-web-app
+npm install
+npm run dev
 ```
 
-## 🚀 Getting Started
+Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-### Prerequisites
-- **Node.js** (v18 or higher)
-- **npm** (comes with Node.js)
-- **Git**
+## Available Scripts
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/my-vite-project.git
-   cd my-vite-project
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-4. Open `http://localhost:5173` in your browser to view the app.
-
-### Available Scripts
-- `npm run dev`: Starts the development server.
-- `npm run build`: Builds the app for production.
-- `npm run preview`: Previews the production build locally.
+- `npm run dev` — start development server  
+- `npm run build` — build for production (output in `dist`)  
+- `npm run preview` — preview production build locally  
 
 ## 🤝 Contributing
 Contributions are welcome! Please follow these steps:
@@ -79,3 +51,12 @@ This project is licensed under the MIT License.
 
 ## 📬 Contact
 For questions or feedback, reach out via [bigv096@gmail.com](mailto:bigv096@gmail.com) or open an issue on GitHub.
+
+## 🧠 Future Plans
+
+- Add shopping cart and checkout  
+- Integrate with backend/API for dynamic data  
+- Implement user authentication and admin dashboard  
+- Enhance UI with Tailwind CSS or another framework  
+
+© VolodX
