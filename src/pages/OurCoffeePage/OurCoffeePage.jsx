@@ -1,10 +1,12 @@
 import {useState} from 'react';
 import {useMemo} from 'react';
 
-import './OurCoffeePage.css';
 import SearchFilter from '@/components/SearchFilter/SearchFilter';
 import CoffeeList from '@/components/CoffeeList/CoffeeList';
 import coffeeData from '@/data/coffee';
+import ourBeans from "@/assets/images/our_beans.jpg"
+
+import './OurCoffeePage.css';
 
 function OurCoffeePage() {
   const [query, setQuery] = useState('');
@@ -40,7 +42,7 @@ function OurCoffeePage() {
         <div className="about-beans-content">
           <div className="about-beans-image">
             <img
-              src="/src/assets/images/our_beans.jpg"
+              src={ourBeans}
               alt="Woman with coffee"
             />
           </div>
