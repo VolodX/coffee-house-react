@@ -1,10 +1,10 @@
-import Divider from '../../UI/Divider/Divider';
+import Divider from '@/components/UI/Divider/Divider';
 import './AboutUs.css';
 
 function AboutUs() {
   return (
     <section className="about-us">
-      <h2 className="about-us__title">About Us</h2>
+      <h2 className="section-title">About Us</h2>
       <Divider variant="black" />
       <div className="about-us__content">
         <p>
