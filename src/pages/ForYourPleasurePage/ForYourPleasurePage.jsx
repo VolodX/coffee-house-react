@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import coffeeData from '@/data/coffee';
 import CoffeeList from '@/components/CoffeeList/CoffeeList';
+import aboutGoods from '@/assets/images/about_goods.jpg'
 
 import './ForYourPleasurePage.css';
 
@@ -12,7 +13,7 @@ function ForYourPleasurePage() {
       <section className="about-goods-section">
         <div className="about-goods-content">
           <div className="about-goods-image">
-            <img src="/src/assets/images/about_goods.jpg" alt="Cup of coffee" />
+            <img src={aboutGoods} alt="Cup of coffee" />
           </div>
           <div className="about-goods-text">
             <h2 className="section-title">About our goods</h2>
