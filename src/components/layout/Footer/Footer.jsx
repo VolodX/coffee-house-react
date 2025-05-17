@@ -6,7 +6,9 @@ import './Footer.css';
 
 function Footer() {
   return (
+		
     <footer className="footer">
+			<hr className="section-divider-footer" />
       <nav className="footer__nav">
         <ul className="footer__list">
           <li className="footer__item">
