@@ -4,8 +4,15 @@
 }
 
 .section-divider {
-  width: 240px;
+  width: 250px;
   margin: 0 auto 60px;
+  border: none;
+  border-top: 1px solid #000;
+}
+
+.section-divider-footer {
+  width: 250px;
+  margin: 0 auto 45px;
   border: none;
   border-top: 1px solid #000;
 }
