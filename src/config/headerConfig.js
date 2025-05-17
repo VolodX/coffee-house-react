@@ -1,6 +1,6 @@
-import HomeHero from '@/components/hero/HomeHero/HomeHero';
-import CoffeeHero from '@/components/hero/CoffeeHero/CoffeeHero';
-import PleasureHero from '@/components/hero/PleasureHero/PleasureHero';
+import HomeHero from '@/components/Heros/HomeHero/HomeHero';
+import CoffeeHero from '@/components/Heros/CoffeeHero/CoffeeHero';
+import PleasureHero from '@/components/Heros/PleasureHero/PleasureHero';
 
 export const headerConfig = {
   '/': {
