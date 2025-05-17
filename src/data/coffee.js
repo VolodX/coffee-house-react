@@ -33,14 +33,14 @@ const coffeeData = [
     id: 5,
     name: 'AROMISTICO Kenya 1 kg',
     origin: 'Kenya',
-    price: 8.99,
+    price: 6.99,
     image: defaultCoffeeImage
   },
   {
     id: 6,
     name: 'AROMISTICO Rwanda 1 kg',
     origin: 'Rwanda',
-    price: 7.99,
+    price: 6.99,
     image: defaultCoffeeImage
   },
 ];
